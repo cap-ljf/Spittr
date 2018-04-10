@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>uploads</title>
+</head>
+<body>
+<form action="/spittles/upload.do" method="POST" th:object="${spittr}" enctype="multipart/form-data">
+    <label>Profile Picture</label>:
+    <input type="file" name="profilePicture" accept="image/jpeg,image/png,image/gif"/><br/>
+    <input type="submit" value="save"/>
+</form>
+</body>
+</html>

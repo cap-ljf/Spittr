@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>DataBind</title>
+</head>
+<body>
+基本类型
+<form action="/databind/baseType.do" method="post">
+    <input name="count" value="10" type="text"/>
+</form>
+包装类型
+<form action="/databind/wrappedType.do" method="post">
+    <input name="count" value="10" type="text"/>
+</form>
+基本对象
+<form action="/databind/object.do" method="post">
+    <input name="username" value="a" type="text"/>
+    <input name="password" value="b" type="text"/>
+    <input type="submit" value="save"/>
+</form>
+复合对象
+<form action="/databind/composeObject.do" method="post">
+    <input name="age" value="10"/>
+    <input name="spitter.username" value="a" type="text"/>
+    <input name="spitter.password" value="b" type="text"/>
+    <input type="submit" value="save"/>
+</form>
+List
+<form action="/databind/list.do" method="post">
+    <table>
+        <thead>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="2"><input type="submit" value="Save"/></td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td><input name="spitters[0].username" value="aaa"/></td>
+            <td><input name="spitters[0].password" value="bbb"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[1].username" value="ccc"/></td>
+            <td><input name="spitters[1].password" value="ddd"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[2].username" value="eee"/></td>
+            <td><input name="spitters[2].password" value="fff"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+Set
+<form action="/databind/set.do" method="post">
+    <table>
+        <thead>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="2"><input type="submit" value="Save"/></td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td><input name="spitters[0].username" value="aaa"/></td>
+            <td><input name="spitters[0].password" value="bbb"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[1].username" value="ccc"/></td>
+            <td><input name="spitters[1].password" value="ddd"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[2].username" value="eee"/></td>
+            <td><input name="spitters[2].password" value="fff"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+Map
+<form action="/databind/map.do" method="post">
+    <table>
+        <thead>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="2"><input type="submit" value="Save"/></td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td><input name="spitters[1].username" value="aaa"/></td>
+            <td><input name="spitters[1].password" value="bbb"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[2].username" value="ccc"/></td>
+            <td><input name="spitters[2].password" value="ddd"/></td>
+        </tr>
+        <tr>
+            <td><input name="spitters[3].username" value="eee"/></td>
+            <td><input name="spitters[3].password" value="fff"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>
