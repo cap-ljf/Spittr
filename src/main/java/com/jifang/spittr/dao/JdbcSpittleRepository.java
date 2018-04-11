@@ -1,8 +1,7 @@
-package com.jifang.spittr.data;
+package com.jifang.spittr.dao;
 
 import com.jifang.spittr.model.Spittle;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;

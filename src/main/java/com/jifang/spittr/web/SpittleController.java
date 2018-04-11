@@ -1,6 +1,6 @@
 package com.jifang.spittr.web;
 
-import com.jifang.spittr.data.SpittleRepository;
+import com.jifang.spittr.dao.SpittleRepository;
 import com.jifang.spittr.exception.SpittleNotFoundException;
 import com.jifang.spittr.model.Spittle;
 import org.slf4j.Logger;

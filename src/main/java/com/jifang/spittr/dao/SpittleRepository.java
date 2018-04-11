@@ -1,4 +1,4 @@
-package com.jifang.spittr.data;
+package com.jifang.spittr.dao;
 
 import com.jifang.spittr.model.Spittle;
 

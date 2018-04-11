@@ -31,7 +31,7 @@ public class SpittrConfig {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/spittr");
         dataSource.setUsername("root");
-        dataSource.setPassword("xjj520520ljf");
+        dataSource.setPassword("");
         dataSource.setInitialSize(5);
         dataSource.setMaxActive(10);
         return dataSource;
